@@ -11,6 +11,6 @@ export class AppComponent {
 
   constructor() {
     this.title = 'APP FAVORITOS';
-    this.description = 'Aplicacion web con Angular';
+    this.description = 'Aplicacion web con Angular para gestionar favoritos online';
   }
 }

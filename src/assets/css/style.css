@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #000000;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -8,14 +8,14 @@ body{
 
 }
 
-.clearfix{
+.clearfix {
     float: none;
     clear: both;
     text-decoration: none;
     list-style: none;
 }
 
-#content{
+#content {
     width: 80%;
     min-height: 500px;
     margin: 0px auto;
@@ -26,31 +26,31 @@ body{
     background-color: rgb(61, 60, 58);
 }
 
-header{
+header {
     background-color: white;
     border-bottom: 5px solid #3d3d3d;
     border-radius: 4.5px 4.5px 0px 0px;
     padding: 15px;
 }
 
-header .title-sub{
-   float: left;
-   color: black;
-   border-bottom: 2px solid #3d3d3d;
-   border-top: 2px solid #3d3d3d;
-   padding: 20px;
-	padding-left: 65px;
-	margin-left: -65px; 
+header .title-sub {
+    float: left;
+    color: black;
+    border-bottom: 2px solid #3d3d3d;
+    border-top: 2px solid #3d3d3d;
+    padding: 20px;
+    padding-left: 65px;
+    margin-left: -65px;
 }
 
-header h1, 
-header p{
+header h1,
+header p {
     margin: 0px;
     margin-left: 15px;
-    letter-spacing: 5px;    
+    letter-spacing: 5px;
 }
 
-header p{
+header p {
     font-size: 12px;
     color: rgb(144, 144, 144);
 }
@@ -58,10 +58,10 @@ header p{
 header #logo {
     float: left;
     display: block;
-    width:65px;
+    width: 65px;
     margin-top: 10px;
-    background-color:black;
-    border-radius: 15%;  
+    background-color: black;
+    border-radius: 15%;
     padding-top: 3px;
 }
 
@@ -70,4 +70,33 @@ footer {
     margin: 0px auto;
     margin-top: 20px;
     color: gray;
+}
+
+@media screen and (max-width: 915px) {
+    body {
+        width: 100%;
+    }
+
+    #content {
+        width: 80%;
+    }
+
+    header .title-sub {
+        border-bottom: 50px;
+        border-top: 50px;
+        padding: 0px;
+        padding-left: 15px;
+        margin-left: 0px;
+        float: none;
+    }
+
+    header #logo {
+        float: right;
+        width: 30px;
+        margin-top: 0px;
+        background-color: black;
+        border-radius: 15%;
+        padding-top: 0px;
+    }
+
 }

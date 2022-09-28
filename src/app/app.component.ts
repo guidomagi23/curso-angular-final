@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'curso-angular-final';
+  public title: string;
+  public description: string;
+
+  constructor() {
+    this.title = 'APP FAVORITOS';
+    this.description = 'Aplicacion web con Angular';
+  }
 }

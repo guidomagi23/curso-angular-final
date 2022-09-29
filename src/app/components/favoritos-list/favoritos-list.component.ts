@@ -11,12 +11,13 @@ import { Favorito } from '../../models/favorito';
 
 export class FavoritosListComponent implements OnInit {
   public title: String;
+  public favoritos!: Favorito[];
   public errorMenssage = null;
 
   constructor(
     private _favoritoService: FavoritoService
   ) {
-    this.title = 'Listado de marcadores';
+    this.title = 'Listado de marcadores:';
   }
 
   ngOnInit() {
@@ -24,6 +25,12 @@ export class FavoritosListComponent implements OnInit {
     this._favoritoService.getFavoritos().subscribe(
       result => {
         console.log(result);
+        this.favoritos = result.favoritos;
+
+        if (!this.favoritos) {
+          alert('Error en el servidor');
+        }
+
       },
       error => {
         this.errorMenssage = <any>error;

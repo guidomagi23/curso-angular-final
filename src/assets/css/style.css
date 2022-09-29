@@ -65,12 +65,100 @@ header #logo {
     padding-top: 3px;
 }
 
+#favoritos-list p {
+    letter-spacing: 2px;
+}
+
+#favoritos-list h4 {}
+
+.favorito-item {
+    list-style: none;
+
+}
+
+/* Css botones ------------------*/
+/* From uiverse.io */
+.btn {
+    position: relative;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em 1em;
+    display: inline-block;
+    border-radius: 1em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    margin-left: 5px;
+
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-ir {
+    background-color: #77f673;
+    color: black;
+}
+
+.btn-ver {
+    background-color: #f6f677;
+    color: black;
+}
+
+.btn-editar {
+    background-color: #77f6f6;
+    color: black;
+}
+
+.btn-eliminar {
+    background-color: #f67777;
+    color: black;
+}
+
+/* ---------------------------------- */
+
 footer {
     width: 80%;
     margin: 0px auto;
     margin-top: 20px;
     color: gray;
 }
+
+
+
 
 @media screen and (max-width: 915px) {
     body {
@@ -99,4 +187,14 @@ footer {
         padding-top: 0px;
     }
 
+}
+
+@media screen and (max-width: 530px) {
+    .btn { 
+        display: block;
+        margin: 0 0;
+        margin-top: 10px;
+        text-align: center;
+        margin-right: 30px;
+    }
 }

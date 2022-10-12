@@ -1,13 +1,12 @@
 <ul id="favoritos-list">
   <li *ngFor="let favorito of favoritos" class="favorito-item">
     <h4>⭐{{favorito.title}}</h4>
-    <p>{{favorito.description}}</p>
     <p class="buttons">
         <a href="{{favorito.url}}" target="_blank" class="btn btn-ir">
             Ir
         </a>
 
-        <a href="{{favorito.url}}" target="_blank" class="btn btn-ver">
+        <a [routerLink]="['/favorito', favorito._id]" class="btn btn-ver">
             Ver
         </a>
 

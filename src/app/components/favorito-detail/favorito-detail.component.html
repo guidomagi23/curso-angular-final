@@ -1,0 +1,11 @@
+<div class="favorito-box" *ngIf="favorito">
+    <h1> ⭐{{favorito.title}}</h1>
+    <p class="description">{{favorito.description}}</p>
+    <a class="url" href="{{favorito.url}}" target="_blank">{{favorito.url}}</a>
+</div>
+
+<p class="buttons">
+    <a href="{'/'}" class="btn btn-volver">
+        Volver
+    </a>
+</p>

@@ -69,8 +69,6 @@ header #logo {
     letter-spacing: 2px;
 }
 
-#favoritos-list h4 {}
-
 .favorito-item {
     list-style: none;
 
@@ -148,7 +146,32 @@ header #logo {
     color: black;
 }
 
+.btn-volver{
+    background-color: #d9d9d9;
+    color: black;
+    letter-spacing: 2px;
+    margin-right: 0px;
+}
+
 /* ---------------------------------- */
+
+.favorito-box {
+    background-color: #555454;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.description {
+    font-size: 15px;
+    color: rgb(241, 240, 240);
+}
+
+.url {
+    font-size: 12px;
+    color: rgb(241, 240, 240);
+}
 
 footer {
     width: 80%;
@@ -196,5 +219,9 @@ footer {
         margin-top: 10px;
         text-align: center;
         margin-right: 30px;
+    }
+
+    .btn-volver{
+        margin-right: 0px;
     }
 }

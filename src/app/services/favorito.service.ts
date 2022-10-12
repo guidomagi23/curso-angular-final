@@ -19,4 +19,8 @@ export class FavoritoService{
     getFavoritos(){
         return this._http.get<Favorito>(this.url+'favoritos');
     }
+
+    getFavorito(id: string){
+        return this._http.get<Favorito>(this.url+'favorito/'+id);
+    }
 }

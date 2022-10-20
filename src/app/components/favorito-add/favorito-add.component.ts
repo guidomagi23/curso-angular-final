@@ -36,7 +36,7 @@ export class FavoritoAddComponent implements OnInit {
           alert('Error en la creacion');
         } else{
           this.favorito = response.favorito;
-          this._router.navigate(['/']);
+          this._router.navigate(['/favorito/', this.favorito._id]);
         }
       },
       error => {

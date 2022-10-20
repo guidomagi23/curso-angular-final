@@ -23,4 +23,11 @@ export class FavoritoService{
     getFavorito(id: string){
         return this._http.get<Favorito>(this.url+'favorito/'+id);
     }
+
+    addFavorito(favorito: Favorito){
+        let params = JSON.stringify(favorito);
+        let headers = new HttpHeaders().set('Content-Type', 'application/json');
+
+        return this._http.post<Favorito>(this.url+'favorito', params, {headers: headers});
+    }
 }

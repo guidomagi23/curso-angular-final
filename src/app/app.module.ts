@@ -7,6 +7,7 @@ import { appRoutingProviders, routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { FavoritosListComponent } from './components/favoritos-list/favoritos-list.component';
 import { FavoritoDetailComponent } from './components/favorito-detail/favorito-detail.component';
+import { FavoritoAddComponent } from './components/favorito-add/favorito-add.component';
 
 
 
@@ -14,7 +15,8 @@ import { FavoritoDetailComponent } from './components/favorito-detail/favorito-d
   declarations: [
     AppComponent,
     FavoritosListComponent,
-    FavoritoDetailComponent
+    FavoritoDetailComponent,
+    FavoritoAddComponent
   ],
   imports: [
     BrowserModule,

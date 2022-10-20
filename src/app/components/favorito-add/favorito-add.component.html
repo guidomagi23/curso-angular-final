@@ -1,0 +1,20 @@
+<h1>{{titulo}}</h1>
+
+<form #formFavorito="ngForm" (ngSubmit)="onSubmit()">
+    <label>Titulo:</label>
+    <input type="text" name="title" [(ngModel)]="favorito.title" required #title="ngModel">
+    <span *ngIf="title.invalid && title.touched">El titulo es obligatorio</span>
+    <br>
+
+    <label>Descripcion:</label>
+    <textarea name="descripcion" [(ngModel)]="favorito.description" required #descripcion="ngModel"></textarea>
+    <span *ngIf="descripcion.invalid && descripcion.touched">La descripcion es obligatoria</span>
+    <br>
+
+    <label>Url:</label>
+    <input type="text" name="url" [(ngModel)]="favorito.url" required #url="ngModel">
+    <span *ngIf="url.invalid && url.touched">La url es obligatoria</span>
+    <br>
+
+    <button type="submit" [disabled]="formFavorito.invalid">Guardar</button>
+</form>
